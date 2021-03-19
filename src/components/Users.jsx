@@ -21,7 +21,7 @@ const Users = () => {
                 const {name, email, id, address } = user;
                 return (
                     <div className='users__card' key={id}>
-                        <h1>{name}</h1>
+                        <h1 className=''>{name}</h1>
                         <h3>{email}</h3>
                         <p>ID:{id}</p>
                         <p>{address.street}</p>

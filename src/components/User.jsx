@@ -16,12 +16,10 @@ const User = () => {
 
     return (
         <div className='user'>
-
-            <p>id: {id}</p>
             {users?.map(user => {
                 if (user.id === parseInt(id)) {
                     return (
-                        <div className='users__card' key={user.id}>
+                        <div className='user__card' key={user.id}>
                             <h1>{user.name}</h1>
                             <h3>{user.email}</h3>
                             <p>ID:{user.id}</p>
@@ -30,6 +28,7 @@ const User = () => {
                         </div>
                     )
                 }
+                return null
             })}
 
         </div>
