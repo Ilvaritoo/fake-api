@@ -1,9 +1,10 @@
-$cardBackground: burlywood;
-$cardFontColor: firebrick;
+$cardBackground: rgb(80, 79, 78);
+$cardFontColor: #fff;
 
 *{
     margin: 0;
 }
 body{
-    background: linear-gradient(to right, rgb(59, 1, 59), rgb(141, 30, 141))
+    // background: linear-gradient(to right, rgb(59, 1, 59), rgb(141, 30, 141));
+    background-color: rgb(235, 232, 232);
 }

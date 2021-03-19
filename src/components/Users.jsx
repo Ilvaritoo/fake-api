@@ -5,9 +5,8 @@ import axios from 'axios';
 
 const url = 'https://jsonplaceholder.typicode.com/users';
 
-import axios from 'axios';
 
-const url = 'https://reqres.in/api/users';
+// const url = 'https://reqres.in/api/users';
 
 const Users = () => {
 
@@ -29,7 +28,7 @@ const Users = () => {
                         <h3>{email}</h3>
                         <p>ID:{id}</p>
                         <p>{address.street}</p>
-                        <Link to={`user/${id}`}>To user</Link>
+                        <Link to={`user/${id}`} className='users__link'>Check User</Link>
                     </div>
                 )
             }
