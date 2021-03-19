@@ -3,7 +3,48 @@
 }
 
 body {
-  background-color: blue;
+  background: -webkit-gradient(linear, left top, right top, from(#3b013b), to(#8d1e8d));
+  background: linear-gradient(to right, #3b013b, #8d1e8d);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.header__logo {
+  padding: 10px 0;
+}
+
+.header__text {
+  padding: 5px 0;
+}
+
+@media (min-width: 500px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__logo {
+    padding: 5px 30px;
+  }
+  .header__text {
+    padding: 0 50px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
 }
 
 .users {
