@@ -1,4 +1,19 @@
 .user{
-    background-color: coral;
-    color: firebrick;
+    // background-color: coral;
+    color: $cardFontColor;
+    height: calc(100vh - 40px);
+    display: grid;
+    place-items: center;
+
+    &__card{
+        background-color: $cardBackground;
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    @media(min-width: 500px){
+        &__card{
+            padding: 100px;
+        }
+    }
 }

@@ -8,52 +8,51 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #fff;
-}
-
-.header__logo {
   padding: 10px 0;
-}
-
-.header__text {
-  padding: 5px 0;
-}
-
-@media (min-width: 500px) {
-  .header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .header__logo {
-    padding: 5px 30px;
-  }
-  .header__text {
-    padding: 0 50px;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-  }
+  background-color: #6e6e6d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .users {
-  background-color: brown;
-  color: #fff;
+  color: firebrick;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.users__card {
+  width: 300px;
+  height: 300px;
+  background-color: burlywood;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .user {
-  background-color: coral;
   color: firebrick;
+  height: calc(100vh - 40px);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.user__card {
+  background-color: burlywood;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+@media (min-width: 500px) {
+  .user__card {
+    padding: 100px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
